@@ -1,6 +1,7 @@
 namespace Matrix.Algorithms.Search;
 
-public class DefaultTextSearch : ITextSearch
+public class DefaultTextSearch : ITextSearchAlgorithm
 {
-    public bool Search(string text, string word) => text.Contains(word);
+    public bool Search(string text, string word) => 
+        text.Contains(word, StringComparison.OrdinalIgnoreCase);
 }

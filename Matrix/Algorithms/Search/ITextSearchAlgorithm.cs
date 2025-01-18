@@ -1,6 +1,6 @@
 namespace Matrix.Algorithms.Search;
 
-public interface ITextSearch
+public interface ITextSearchAlgorithm
 {
     bool Search(string text, string word);
 }
